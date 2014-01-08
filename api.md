@@ -25,7 +25,7 @@ Usage:
   foo.get(); // equals "bar"
 ```
 
-> ```self.get = function() { ...``` [reactive-property.js:29](reactive-property.js#L29)
+> ```self.get = function() { ...``` [reactive-property.js:36](reactive-property.js#L36)
 
 -
 
@@ -44,7 +44,7 @@ Usage:
   foo.set('bar');
 ```
 
-> ```self.set = function(value) { ...``` [reactive-property.js:43](reactive-property.js#L43)
+> ```self.set = function(value) { ...``` [reactive-property.js:50](reactive-property.js#L50)
 
 -
 
@@ -65,7 +65,7 @@ Usage:
   foo.dec(5); // -5
 ```
 
-> ```self.dec = function(by) { ...``` [reactive-property.js:60](reactive-property.js#L60)
+> ```self.dec = function(by) { ...``` [reactive-property.js:67](reactive-property.js#L67)
 
 -
 
@@ -86,7 +86,7 @@ Usage:
   foo.inc(5); // 5
 ```
 
-> ```self.inc = function(by) { ...``` [reactive-property.js:75](reactive-property.js#L75)
+> ```self.inc = function(by) { ...``` [reactive-property.js:82](reactive-property.js#L82)
 
 -
 
@@ -110,6 +110,6 @@ Usage:
   foo.getset(); // returns 5
 ```
 
-> ```self.getset = function(value) { ...``` [reactive-property.js:91](reactive-property.js#L91)
+> ```self.getset = function(value) { ...``` [reactive-property.js:98](reactive-property.js#L98)
 
 -

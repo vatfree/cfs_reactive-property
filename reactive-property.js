@@ -18,6 +18,13 @@ ReactiveProperty = function(defaultValue) {
     */
   self.value = defaultValue;
 
+  self.onChange = function() {};
+
+  self.changed = function() {
+    _deps.changed();
+    self.onChange(self.value);
+  };
+
   /**
     * @method ReactiveProperty.get
     * Usage:
@@ -43,7 +50,7 @@ ReactiveProperty = function(defaultValue) {
   self.set = function(value) {
     if (self.value !== value) {
       self.value = value;
-      _deps.changed();
+      self.changed();
     }
   };
 
@@ -59,7 +66,7 @@ ReactiveProperty = function(defaultValue) {
     */
   self.dec = function(by) {
     self.value -= by || 1;
-    _deps.changed();
+    self.changed();
   };
 
   /**
@@ -74,7 +81,7 @@ ReactiveProperty = function(defaultValue) {
     */
   self.inc = function(by) {
     self.value += by || 1;
-    _deps.changed();
+    self.changed();
   };
 
   /**
