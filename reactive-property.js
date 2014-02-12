@@ -1,15 +1,23 @@
 // #ReactiveProperty
 // A simple class that provides an reactive property interface
 
+_noopCallback = function() {};
+
+_nonReactive = {
+  changed: _noopCallback,
+  depend: _noopCallback
+};
+
 /**
   * @constructor
   * @param {any} defaultValue Set the default value for the reactive property
+  * @param {boolean} [reactive = true] Allow the user to disable reactivity
   *
   * This api should only be in the internal.api.md
   */
-ReactiveProperty = function(defaultValue) {
+ReactiveProperty = function(defaultValue, reactive) {
   var self = this;
-  var _deps = new Deps.Dependency();
+  var _deps = (reactive === false)? _nonReactive : new Deps.Dependency();
 
   /** @property ReactiveProperty.value
     * @private
