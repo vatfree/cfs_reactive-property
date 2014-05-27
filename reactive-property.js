@@ -123,4 +123,15 @@ ReactiveProperty = function(defaultValue, reactive) {
     var val = self.get();
     return val ? val.toString() : '';
   };
+
+  /**
+    * @method ReactiveProperty.toText
+    * Usage:
+    * ```js
+    *   var foo = new ReactiveProperty('bar');
+    *   foo.toText(); // returns 'bar'
+    * ```
+    */
+  self.toText = self.toString;
+
 };
