@@ -111,4 +111,27 @@ ReactiveProperty = function(defaultValue, reactive) {
     }
   };
 
+  /**
+    * @method ReactiveProperty.toString
+    * Usage:
+    * ```js
+    *   var foo = new ReactiveProperty('bar');
+    *   foo.toString(); // returns 'bar'
+    * ```
+    */
+  self.toString = function() {
+    var val = self.get();
+    return val ? val.toString() : '';
+  };
+
+  /**
+    * @method ReactiveProperty.toText
+    * Usage:
+    * ```js
+    *   var foo = new ReactiveProperty('bar');
+    *   foo.toText(); // returns 'bar'
+    * ```
+    */
+  self.toText = self.toString;
+
 };
