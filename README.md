@@ -1,4 +1,4 @@
-cfs:reactive-property [![Build Status](https://travis-ci.org/CollectionFS/Meteor-reactive-property.png?branch=master)](https://travis-ci.org/CollectionFS/Meteor-reactive-property)
+zcfs:reactive-property [![Build Status](https://travis-ci.org/CollectionFS/Meteor-reactive-property.png?branch=master)](https://travis-ci.org/CollectionFS/Meteor-reactive-property)
 =========
 
 ~~Looking for maintainers - please reach out!~~
