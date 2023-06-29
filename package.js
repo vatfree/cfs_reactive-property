@@ -1,12 +1,12 @@
 Package.describe({
-  name: 'zcfs:reactive-property',
-  version: '0.0.4',
+  name: 'cfs:reactive-property',
+  version: '0.0.5',
   summary: 'Reactive Property is a small, fast reative property class',
-  git: 'https://github.com/zcfs/Meteor-reactive-property.git'
+  git: 'https://github.com/vatfree/cfs_reactive-property.git'
 });
 
 Package.onUse(function (api) {
-  api.versionsFrom('1.0');
+  api.versionsFrom(['1.0', '2.0']);
   
   api.use('deps', ['client', 'server']);
 
